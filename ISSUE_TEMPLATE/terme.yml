@@ -1,28 +1,28 @@
-name: "Ontologie d'une fonction : valider, modifier, nouveau terme"
-description: "Valider les termes GO/TO/ECOCORE/RO d'une fonction, en proposer d'autres, une définition, ou demander un terme manquant"
-title: "[ontologie] "
-labels: ["ontologie"]
+name: "Function ontology: validate, change, request a new term"
+description: "Validate the GO/TO/ECOCORE/RO terms of a function, suggest others or a definition, or request a missing term"
+title: "[ontology] "
+labels: ["ontology"]
 body:
   - type: input
     id: fonction
-    attributes: {label: "Fonction écologique de l'atlas"}
+    attributes: {label: "Atlas ecological function"}
     validations: {required: true}
   - type: dropdown
     id: decision
     attributes:
-      label: "Décision"
-      options: ["Correspondance validée / Mapping validated", "Modifier la correspondance / Change the mapping", "Nouveau terme nécessaire / New term needed", "Nouvelle définition / New definition", "Scinder ou regrouper des fonctions / Split or merge functions"]
+      label: "Decision"
+      options: ["Mapping validated", "Change the mapping", "New term needed", "New definition", "Split or merge functions"]
     validations: {required: true}
   - type: textarea
     id: termes
-    attributes: {label: "Termes actuels (prérempli : prédicat SKOS, identifiant, libellé)"}
+    attributes: {label: "Current terms (prefilled: SKOS predicate, identifier, label)"}
   - type: textarea
     id: proposition
-    attributes: {label: "Proposition", description: "Autre terme (identifiant OBO), nouvelle définition, ou libellé + définition du terme à créer et ontologie cible (GO, TO, ECOCORE, RO…)"}
+    attributes: {label: "Proposal", description: "Another term (OBO identifier), a new definition, or label + definition of the term to create and target ontology (GO, TO, ECOCORE, RO…)"}
   - type: textarea
     id: commentaire
-    attributes: {label: "Commentaire / lacune signalée"}
+    attributes: {label: "Comment / gap reported"}
   - type: input
     id: orcid
-    attributes: {label: "ORCID du curateur", placeholder: "0000-0000-0000-0000"}
+    attributes: {label: "Curator ORCID", placeholder: "0000-0000-0000-0000"}
     validations: {required: true}
