@@ -1,0 +1,24 @@
+name: "Proposer une autre fonction pour un lien"
+description: "La publication soutient une autre fonction (existante ou nouvelle) que celle de l'atlas"
+title: "[autre fonction] "
+labels: ["suggestion-fonction"]
+body:
+  - type: input
+    id: paire
+    attributes: {label: "Paire actuelle (classe → fonction)"}
+    validations: {required: true}
+  - type: textarea
+    id: lien
+    attributes: {label: "Lien, phrase justificative et référence (prérempli)"}
+  - type: input
+    id: proposition
+    attributes: {label: "Fonction proposée", description: "Une fonction de la liste, ou « Nouvelle fonction : nom + définition »"}
+    validations: {required: true}
+  - type: textarea
+    id: justification
+    attributes: {label: "Justification (ce que la publication mesure)"}
+    validations: {required: true}
+  - type: input
+    id: orcid
+    attributes: {label: "ORCID du curateur", placeholder: "0000-0000-0000-0000"}
+    validations: {required: true}

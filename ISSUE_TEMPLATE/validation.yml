@@ -1,0 +1,22 @@
+name: "Valider un lien molécule → fonction"
+description: "Confirmer qu'une paire de l'atlas est bien soutenue par la publication citée"
+title: "[validation] "
+labels: ["validation"]
+body:
+  - type: input
+    id: paire
+    attributes: {label: "Paire (classe → fonction)"}
+    validations: {required: true}
+  - type: textarea
+    id: lien
+    attributes: {label: "Lien, phrase justificative et référence (prérempli par l'atlas)"}
+  - type: textarea
+    id: termes
+    attributes: {label: "Termes d'ontologie associés à la fonction"}
+  - type: input
+    id: orcid
+    attributes: {label: "ORCID du curateur", placeholder: "0000-0000-0000-0000"}
+    validations: {required: true}
+  - type: textarea
+    id: commentaire
+    attributes: {label: "Commentaire (facultatif)"}
