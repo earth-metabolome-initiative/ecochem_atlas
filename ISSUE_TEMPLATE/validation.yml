@@ -1,22 +1,22 @@
-name: "Valider un lien molécule → fonction"
-description: "Confirmer qu'une paire de l'atlas est bien soutenue par la publication citée"
+name: "Validate a molecule → function link"
+description: "Confirm that an atlas link is supported by the cited publication"
 title: "[validation] "
 labels: ["validation"]
 body:
   - type: input
     id: paire
-    attributes: {label: "Paire (classe → fonction)"}
+    attributes: {label: "Pair (class → function)"}
     validations: {required: true}
   - type: textarea
     id: lien
-    attributes: {label: "Lien, phrase justificative et référence (prérempli par l'atlas)"}
+    attributes: {label: "Link, supporting sentence and reference (prefilled by the atlas)"}
   - type: textarea
     id: termes
-    attributes: {label: "Termes d'ontologie associés à la fonction"}
+    attributes: {label: "Ontology terms mapped to the function"}
   - type: input
     id: orcid
-    attributes: {label: "ORCID du curateur", placeholder: "0000-0000-0000-0000"}
+    attributes: {label: "Curator ORCID", placeholder: "0000-0000-0000-0000"}
     validations: {required: true}
   - type: textarea
     id: commentaire
-    attributes: {label: "Commentaire (facultatif)"}
+    attributes: {label: "Comment (optional)"}
