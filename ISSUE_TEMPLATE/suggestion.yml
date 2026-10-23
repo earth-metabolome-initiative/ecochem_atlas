@@ -1,24 +1,24 @@
-name: "Proposer une autre fonction pour un lien"
-description: "La publication soutient une autre fonction (existante ou nouvelle) que celle de l'atlas"
-title: "[autre fonction] "
-labels: ["suggestion-fonction"]
+name: "Suggest another function for a link"
+description: "The publication supports a different function (existing or new) than the one in the atlas"
+title: "[other function] "
+labels: ["function-suggestion"]
 body:
   - type: input
     id: paire
-    attributes: {label: "Paire actuelle (classe → fonction)"}
+    attributes: {label: "Current pair (class → function)"}
     validations: {required: true}
   - type: textarea
     id: lien
-    attributes: {label: "Lien, phrase justificative et référence (prérempli)"}
+    attributes: {label: "Link, supporting sentence and reference (prefilled)"}
   - type: input
     id: proposition
-    attributes: {label: "Fonction proposée", description: "Une fonction de la liste, ou « Nouvelle fonction : nom + définition »"}
+    attributes: {label: "Suggested function", description: "A function from the list, or 'New function: name + definition'"}
     validations: {required: true}
   - type: textarea
     id: justification
-    attributes: {label: "Justification (ce que la publication mesure)"}
+    attributes: {label: "Justification (what the publication actually measured)"}
     validations: {required: true}
   - type: input
     id: orcid
-    attributes: {label: "ORCID du curateur", placeholder: "0000-0000-0000-0000"}
+    attributes: {label: "Curator ORCID", placeholder: "0000-0000-0000-0000"}
     validations: {required: true}
